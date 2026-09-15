@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff8fb">
+  <title>For Jana — One little thing after exams.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="experience" class="experience">
+    <!-- SCENE 1: Opening -->
+    <section id="opening" class="scene opening-scene" aria-label="Opening">
+      <div class="opening-copy">
+        <p class="eyebrow">FOR JANA</p>
+        <h1>One little thing<br>after exams.</h1>
+        <p class="subcopy">No questions. No studying. Just tap the present.</p>
+      </div>
+
+      <button id="presentButton" class="present-button" aria-label="Tap to open the present">
+        <span class="present-halo" aria-hidden="true"></span>
+        <img src="present.png" alt="A pink present with a ribbon">
+      </button>
+
+      <p class="tap-hint"><span aria-hidden="true">●</span> TAP TO OPEN</p>
+    </section>
+
+    <!-- Persistent layers: envelope exists from the beginning, underneath flowers. -->
+    <section id="celebration" class="scene celebration-scene" aria-label="Celebration">
+      <div class="celebration-copy">
+        <p class="eyebrow">OFFICIAL ANNOUNCEMENT</p>
+        <h2>Jana is officially<br><em>DONE.</em></h2>
+        <p class="celebration-lede">The notes can go away. The exam timetable can disappear. You made it through.</p>
+
+        <div class="status-cards">
+          <article><span>01</span><strong>EXAMS</strong><small>finished</small></article>
+          <article><span>02</span><strong>STRESS</strong><small>dismissed</small></article>
+          <article><span>03</span><strong>VACATION</strong><small>loading</small></article>
+        </div>
+      </div>
+
+      <div id="envelopeArea" class="envelope-area">
+        <button id="envelopeButton" class="envelope-button" aria-label="Tap the envelope to open it">
+          <span class="envelope-shadow" aria-hidden="true"></span>
+          <span class="envelope-back" aria-hidden="true"></span>
+          <span class="letter-preview" aria-hidden="true">
+            <span>for Jana</span>
+          </span>
+          <span class="envelope-front" aria-hidden="true"></span>
+          <span class="envelope-pocket" aria-hidden="true"></span>
+          <span class="envelope-flap" aria-hidden="true"></span>
+          <span class="envelope-seal" aria-hidden="true">J</span>
+        </button>
+        <p class="envelope-hint">TAP THE ENVELOPE</p>
+      </div>
+    </section>
+
+    <!-- Scene 2 letter, layered into the same document so there is no hard page cut. -->
+    <section id="letterScene" class="scene letter-scene" aria-label="Letter">
+      <div class="paper-wrap">
+        <article id="letterPaper" class="letter-paper">
+          <div class="paper-content">
+            <p class="handwritten small">dear Jana,</p>
+            <h3 class="handwritten">You did it.</h3>
+            <p class="handwritten body">
+              You worked ridiculously hard for these exams, and now you finally get to put the notes away, breathe properly, and enjoy being done.
+            </p>
+            <p class="handwritten body">
+              This is just a little reminder that you should be proud of yourself. You earned the break.
+            </p>
+            <p class="handwritten signoff">— from someone who’s very glad you’re done</p>
+            <button id="continueButton" class="continue-button" type="button">continue your surprise</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Scene 3: Final reveal -->
+    <section id="surprise" class="scene surprise-scene" aria-label="Final surprise">
+      <div class="surprise-copy">
+        <p class="eyebrow">A LITTLE SOMETHING ELSE</p>
+        <h2>And now...<br><em>Something nice</em><br>to look forward to.</h2>
+        <p>See you on <strong>21 September.</strong></p>
+      </div>
+
+      <div class="boarding-pass-wrap">
+        <article class="boarding-pass" aria-label="Personalised boarding pass">
+          <div class="ticket-main">
+            <div class="ticket-brand">
+              <span>JANA AIR</span>
+              <span class="ticket-mark">✦</span>
+            </div>
+
+            <div class="route">
+              <div>
+                <small>FROM</small>
+                <strong>YOU</strong>
+              </div>
+              <div class="route-line" aria-hidden="true"><span>✈</span></div>
+              <div class="align-right">
+                <small>TO</small>
+                <strong>ME</strong>
+              </div>
+            </div>
+
+            <div class="flight-grid">
+              <div><small>PASSENGER</small><strong>JANA</strong></div>
+              <div><small>DATE</small><strong>21 SEP 2026</strong></div>
+              <div><small>DEPART</small><strong>09:45</strong></div>
+              <div><small>ARRIVE</small><strong>11:55</strong></div>
+              <div><small>SEAT</small><strong>01A</strong></div>
+              <div><small>GROUP</small><strong>A</strong></div>
+            </div>
+
+            <div class="ticket-footer">
+              <span>VACATION / PERSONAL INVITATION</span>
+              <span>BOARDING 09:15</span>
+            </div>
+          </div>
+
+          <div class="ticket-stub">
+            <div class="stub-top">JANA</div>
+            <div class="barcode" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="stub-bottom">21 · 09:45</div>
+          </div>
+        </article>
+
+        <div class="countdown" aria-label="Countdown to 21 September 2026 at 09:45">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <div><strong id="minutes">00</strong><span>MIN</span></div>
+          <div><strong id="seconds">00</strong><span>SEC</span></div>
+        </div>
+        <p class="countdown-note">counting down to 21 September 2026 · 09:45</p>
+      </div>
+    </section>
+
+    <!-- Flower layer sits above the scenes. -->
+    <div id="flowerLayer" class="flower-layer" aria-hidden="true"></div>
+
+    <!-- A very subtle cinematic veil during scene changes. -->
+    <div id="transitionVeil" class="transition-veil" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
